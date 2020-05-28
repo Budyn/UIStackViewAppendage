@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "UIStackViewAppendage",
+    platforms: [
+        .iOS(.v9)
+    ],
     products: [
         .library(
             name: "UIStackViewAppendage",
