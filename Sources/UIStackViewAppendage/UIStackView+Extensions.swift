@@ -9,14 +9,14 @@ extension UIStackView {
     }
 
     @discardableResult
-    func replace(_ arrangedSubviews: [UIView]) -> Self {
+    public func replace(_ arrangedSubviews: [UIView]) -> Self {
         removeAllArrangedSubviews()
         arrangedSubviews.forEach(addArrangedSubview(_:))
         return self
     }
 
     @discardableResult
-    func configure(
+    public func configure(
         axis: NSLayoutConstraint.Axis? = nil,
         spacing: CGFloat? = nil,
         alignment: UIStackView.Alignment? = nil,
@@ -30,7 +30,7 @@ extension UIStackView {
     }
 
     @discardableResult
-    func apply(layoutMargins: UIEdgeInsets) -> Self {
+    public func apply(layoutMargins: UIEdgeInsets) -> Self {
         self.isLayoutMarginsRelativeArrangement = true
         self.layoutMargins = layoutMargins
         return self
